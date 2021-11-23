@@ -31,6 +31,7 @@ View(galton)
 galton_model <- lm(child ~ parent, data = galton)
 galton_model
 
-#시각화
-plot(galton$child, galton$parent, data = galton)
-abline(galton_model, col = 'red')
+# 시각화
+plot(galton$child ~ galton$parent, data=galton)
+abline(galton_model, col='red') # 회귀선
+
